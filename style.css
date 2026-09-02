@@ -69,3 +69,11 @@ img {
     --color-bg-secondary: #eeeeee;
     --color-bg-white: #ffffff;
 }
+/*----------base------------*/
+body {
+            background-color: var(--tg-theme-bg-color, #ffffff);
+            color: var(--tg-theme-text-color, #000000);
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
