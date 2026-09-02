@@ -1,3 +1,4 @@
 export const data = {
-    user: {}
+    user: {},
+    fullScreen: false,
 };

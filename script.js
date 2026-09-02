@@ -7,7 +7,12 @@ import { dashboard } from './js/dashbord.js'
 import { data } from './js/data.js'
 
 app.innerHTML = `
-    <div class="app_container">
+    <div class="&{
+        if (data.fullScreen) {
+        return "app_container_fullSkrin"} else {
+        return "app_container"
+        }
+    }">
         ${dashboard(data)}
     </div>
 `

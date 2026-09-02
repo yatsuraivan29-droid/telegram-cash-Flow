@@ -77,9 +77,12 @@ body {
             text-align: center;
             padding: 20px;
         }
-.app_container{
-    padding-top: 50px;
+.app_container_fullSkrin{
+    padding-top: 100px;
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px; 
+}
+.app_container{
+    padding: 5px;
 }
