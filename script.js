@@ -7,5 +7,7 @@ import { dashboard } from './js/dashbord.js'
 import { data } from './js/data.js'
 
 app.innerHTML = `
-    ${dashboard(data)}
+    <div class="app_container">
+        ${dashboard(data)}
+    </div>
 `
