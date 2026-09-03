@@ -92,7 +92,7 @@ position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--tg-theme-bg-color, #ffffff);
+    background-color: var(--tg-theme-secondary-bg-color, var(--tg-theme-bg-color, #ffffff));
     padding: 6px;
     border-radius: 35px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -104,7 +104,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #1c1c1e;
+    color: var(--tg-theme-hint-color, #999999);
     padding: 8px 12px;
     border-radius: 25px;
     flex: 1;
@@ -124,6 +124,6 @@ display: flex;
     line-height: 1.2;
 }
 .bottom-menu__item.active {
-    background-color: #E8F4FE; /* Світло-блакитне овальне виділення */
-    color: #2B88D8; /* Блакитний колір тексту */
+    background-color: color-mix(in srgb, var(--tg-theme-button-color, #3390ec) 15%, transparent);
+    color: var(--tg-theme-button-color, var(--tg-theme-link-color, #3390ec));
 }
