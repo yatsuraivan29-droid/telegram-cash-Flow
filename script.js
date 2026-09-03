@@ -12,7 +12,11 @@ function getCurrentPage() {
 }
 
 function renderApp() {
-       const currentPage = getCurrentPage()
+    const currentPage = getCurrentPage()
+
+    if (!window.location.hash) {
+        window.history.replaceState(null, '', '#dashboard')
+    }     
 
     app.innerHTML = `
         <div class="app_container">
