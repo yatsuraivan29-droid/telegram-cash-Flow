@@ -80,3 +80,50 @@ body {
 .app_container{
     padding: 5px;
 }
+
+/*----------bottomMenu------------*/
+.bottom-menu{
+position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    max-width: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000; 
+}
+.bottom-menu__item{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1c1c1e;
+    padding: 8px 12px;
+    border-radius: 25px;
+    flex: 1;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.bottom-menu__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
+}
+.bottom-menu__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.bottom-menu__item.active {
+    background-color: #E8F4FE; /* Світло-блакитне овальне виділення */
+    color: #2B88D8; /* Блакитний колір тексту */
+}
