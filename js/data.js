@@ -27,5 +27,11 @@ export const data = {
             href: "#settings",
             },
     ]
+    },
+    supabase: {
+        user: {},
+        family: {},
+        money: {},
+        familyMoney: {},
     }
 };

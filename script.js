@@ -6,6 +6,7 @@ import './js/initTelegram.js'
 import { data } from './js/data.js'
 import { bottomMenu } from './js/BotomMenu.js'
 import { renderPage } from './js/router.js'
+import { loadSupabaseData } from './js/supabase.js'
 
 function getCurrentPage() {
     const page = window.location.hash.slice(1)
@@ -30,4 +31,10 @@ function renderApp() {
 }
 
 window.addEventListener('hashchange', renderApp)
-renderApp()
+
+loadSupabaseData()
+    .then(renderApp)
+    .catch((error) => {
+        console.error(error)
+        app.textContent = 'Не удалось загрузить данные'
+    })
