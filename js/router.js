@@ -57,10 +57,10 @@ export function activatePageButtons(data) {
 			supabase.from('Cash').insert([
 				{
 					user_id: currentUserId,
-					date: dataMoney,
-					sum: sumMoney,
+					data: dataMoney,
+					cashSum: sumMoney,
 					type: typeMoney,
-					category: categoryMoney,
+					kategory: categoryMoney,
 					subCategory: subCategoryMoney
 				}
 			]).then((response) => {
