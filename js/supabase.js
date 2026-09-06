@@ -60,10 +60,7 @@ export async function ensureTelegramUser() {
 
 	const newUser = {
 		'telegram-id': telegramId,
-		username: data.user?.username || data.user?.first_name || 'telegram-user',
-		first_name: data.user?.first_name || '',
-		last_name: data.user?.last_name || '',
-		photo_url: data.user?.photo_url || null,
+		username: data.user?.username || 'telegram-user',
 	};
 
 	const { data: insertedUser, error } = await supabase
