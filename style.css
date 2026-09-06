@@ -151,3 +151,75 @@ display: flex;
     background-color: color-mix(in srgb, var(--tg-theme-button-color, #3390ec) 15%, transparent);
     color: var(--tg-theme-button-color, var(--tg-theme-link-color, #3390ec));
 }
+/*----------money------------*/
+.money__button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--tg-theme-button-color, #3390ec);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.money__button:hover {
+    background-color: var(--tg-theme-button-hover-color, #2874c5);
+    transform: translateY(-2px);
+}
+.money__button:active {
+    background-color: var(--tg-theme-button-active-color, #1a5a99);
+    transform: translateY(0);
+}
+.form-money__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--tg-theme-button-color, #3390ec);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+}   
+.form-money {
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    padding-top: 40px;
+    background-color: var(--tg-theme-secondary-bg-color, var(--tg-theme-bg-color, #ffffff));
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.form-money__input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--tg-theme-border-color, #cccccc);
+    border-radius: 4px;
+    font-size: 14px;
+}
+.form-money__button {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--tg-theme-button-color, #3390ec);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form-money__button:hover {
+    background-color: var(--tg-theme-button-hover-color, #2874c5);
+}

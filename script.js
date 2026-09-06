@@ -1,5 +1,5 @@
 // AI doom 
-const app = document.getElementById("app")
+export const app = document.getElementById("app")
 
 // conect js
 import './js/initTelegram.js'
@@ -7,6 +7,9 @@ import { data } from './js/data.js'
 import { bottomMenu } from './js/BotomMenu.js'
 import { renderPage } from './js/router.js'
 import { loadSupabaseData } from './js/supabase.js'
+import { activatePageButtons } from './js/router.js'
+
+
 
 function getCurrentPage() {
     const page = window.location.hash.slice(1)
@@ -28,6 +31,7 @@ function renderApp() {
             ${bottomMenu(data, currentPage)}
         </div>
     `
+    activatePageButtons(data)
 }
 
 window.addEventListener('hashchange', renderApp)
